@@ -1,10 +1,21 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Table, Button } from 'react-bootstrap';
+import { Container, Navbar, Row, Col, Table, Button } from 'react-bootstrap';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <Navbar  bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
+          <Navbar.Toggle />
+          <Navbar.Collapse className="justify-content-end">
+            <Navbar.Text>
+              Signed in as: <a href="#login">Mark Otto</a>
+            </Navbar.Text>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
       <div>
         <iframe src="https://www.google.com/maps/d/embed?mid=18ZUMdmSLrSvO11T4ays8QK3_Z26GjHgs" width="100%" height="400"></iframe>
       </div>
