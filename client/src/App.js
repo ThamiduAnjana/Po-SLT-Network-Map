@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Table, Button } from 'react-bootstrap';
+import { Table} from 'react-bootstrap';
 import './App.css';
 
 function App() {
