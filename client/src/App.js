@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Navbar, Table, Modal, Button, Form } from 'react-bootstrap';
+import { Container, Navbar, Table, Modal, Button, Form, Row, Col } from 'react-bootstrap';
 import './App.css';
 import { useState } from "react";
 
@@ -26,30 +26,58 @@ function App() {
       <div>
         <iframe src="https://www.google.com/maps/d/embed?mid=18ZUMdmSLrSvO11T4ays8QK3_Z26GjHgs" width="100%" height="400"></iframe>
       </div>
+      <h1 style={{textAlign:'center'}}>Details Table</h1>
+      <Container>
+        <Row>
+          <Col>
+            <Form.Label>Category</Form.Label>
+            <Form.Select aria-label="Default select example">
+              <option>Select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </Form.Select>
+          </Col>
+          <Col>
+            <Form.Label>Category</Form.Label>
+            <Form.Select aria-label="Default select example">
+              <option>Select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </Form.Select>
+          </Col>
+          <Col>
+            <Form.Label>Category</Form.Label>
+            <Form.Select aria-label="Default select example">
+              <option>Select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </Form.Select>
+          </Col>
+
+        </Row>
+      </Container>
+      <br />
       <Table striped bordered hover size="sm">
         <thead>
           <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
-            <th>Last Name</th>
-            <th>Username</th>
+            <th>Date</th>
+            <th style={{ width: 100 }}>Core No</th>
+            <th>Dist</th>
+            <th>Loss</th>
+            <th>Status</th>
+            <th style={{ width: 500 }}>Remarks</th>
+            <th>Status</th>
+            <th>Loss</th>
+            <th>Dist</th>
+            <th style={{ width: 100 }}>Core No</th>
+            <th>Date</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Test</td>
-            <td>Test</td>
-            <td>Test</td>
             <td>Test</td>
             <td>Test</td>
             <td>Test</td>
